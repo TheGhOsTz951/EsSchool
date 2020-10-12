@@ -23,12 +23,20 @@
     <p class="p-btn"><input class="btn add" type="button" value="Aggiungi esercizio" onclick="showAdd()"></p>
 
     <div id="add-es-div" class="add-es">
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
+            <p>
+                Seleziona un file da caricare:
+                <select name="sel-file" id="sel-file" onchange="selShow()">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </p>
             <p>Password: <input type="password" name="pw"></p>
-            <p>Nome: <input type="text" name="nome"></p>
-            <p>Descrizione: <input type="text" name="desc"></p>
-            <p>Link: <input type="text" name="link"></p>
-            <p><input class="btn add" type="submit" value="Aggiungi"></p>
+            <p id="nome">Nome: <input type="text" name="nome"></p>
+            <p id="desc">Descrizione: <input type="text" name="desc"></p>
+            <p><input type="file" name="fileToUpload" id="fileToUpload"></p>
+            <p><input class="btn add" type="submit" value="Carica file"></p>
         </form>
     </div>
 </body>
@@ -37,64 +45,11 @@
 </html>
 
 <?php
+    include 'php/uploadFile.php';
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        @createLink();
-    }
-
-    function createLink() {
-        $servername = "localhost";
-        $username = "bottegasasso";
-        $password = "";
-        $dbname = "my_bottegasasso";
-
-        $pw = test_input($_POST["pw"]);
-        $name = test_input($_POST["nome"]);
-        $descri = test_input($_POST["desc"]);
-        $link = test_input($_POST["link"]);
-
-        // Create connection
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-        // Check connection
-        if (!$conn) {
-            die("<p>Connessione col database non riuscita!</p>");
-        }
-
-        // Check password
-        $sql = "SELECT pw FROM utenti WHERE id='0'";
-        $result = mysqli_query($conn, $sql);
-        $row = mysqli_fetch_assoc($result);
-        $password = $row['pw'];
-
-        if (strcmp($pw, $password) != 0) {
-            //echo "<p>Password errata!</p>";
-            return;
-        }
-
-        $id = 0;
-        $sql = "SELECT id FROM esercizi";
-        $result = mysqli_query($conn, $sql);
-
-        if (mysqli_num_rows($result) > 0) {
-            // output data of each row
-            while($row = mysqli_fetch_assoc($result)) {
-                echo $row['id'];
-                if ($row['id'] > $id) {
-                    $id = $row['id'];
-                }
-            }
-            
-        }
-        
-        $id ++;
-
-        $sql = "INSERT INTO esercizi (id, nome, descri, link) VALUES
-        ('$id', '$name', '$descri', '$link')";
-
-        mysqli_query($conn, $sql);
-
-        header("Refresh:0");
-        mysqli_close($conn);
+        $dirName = $_POST['sel-file'];
+        @upload($dirName);
     }
 
     function createList() {
@@ -126,12 +81,5 @@
         }
 
         mysqli_close($conn);
-    }
-
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
     }
 ?> 
