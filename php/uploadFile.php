@@ -32,29 +32,26 @@
         $target_file = $dirName . "/" . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
-        // Check if file already exists
         
-
         // Check file size
         if ($_FILES["fileToUpload"]["size"] > 500000) {
-            echo "Il file e' troppo grande!";
+            //echo "Il file e' troppo grande!";
             $uploadOk = 0;
         }
 
         // Allow certain file formats
         if ($fileType != "html" && $fileType != "css" && $fileType != "js") {
-            echo "Puoi caricare solo file html, css, js!";
+            //echo "Puoi caricare solo file html, css, js!";
             $uploadOk = 0;
         }
 
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
-            echo "Il file non e' stato caricato";
+            //echo "Il file non e' stato caricato";
         } else if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
         } else {
-            echo "Sorry, there was an error uploading your file.";
+            //echo "Sorry, there was an error uploading your file.";
             $uploadOk = 0;
         }
 
@@ -71,7 +68,6 @@
         $dbname = "my_bottegasasso";
 
         $pw = test_input($_POST["pw"]);
-        $name = test_input($_POST["nome"]);
         $descri = test_input($_POST["desc"]);
 
         // Create connection
@@ -100,7 +96,6 @@
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo $row['id'];
                 if ($row['id'] > $id) {
                     $id = $row['id'];
                 }
@@ -110,8 +105,8 @@
         
         $id ++;
 
-        $sql = "INSERT INTO esercizi (id, nome, descri, link) VALUES
-        ('$id', '$name', '$descri', '$link')";
+        $sql = "INSERT INTO esercizi (id, descri, link) VALUES
+        ('$id', '$descri', '$link')";
 
         mysqli_query($conn, $sql);
 

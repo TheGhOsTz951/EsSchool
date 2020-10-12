@@ -33,12 +33,17 @@
                 </select>
             </p>
             <p>Password: <input type="password" name="pw"></p>
-            <p id="nome">Nome: <input type="text" name="nome"></p>
             <p id="desc">Descrizione: <input type="text" name="desc"></p>
-            <p><input type="file" name="fileToUpload" id="fileToUpload"></p>
-            <p><input class="btn add" type="submit" value="Carica file"></p>
+            <label class="btn up">
+                Seleziona file
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <img src="images/up-icon.png" alt="upload">
+            </label>
+            <p class="margin-top"><input class="btn add" type="submit" value="Carica file"></p>
         </form>
     </div>
+
+    <p id="icons8"><a target="_blank" href="https://icons8.it/icons/set/upload">Caricare icon</a> icona per <a target="_blank" href="https://icons8.it">icone 8</a></p>
 </body>
 
 <script src="js/index.js"></script>
@@ -66,14 +71,13 @@
             die("<p>Connessione col database non riuscita!</p>");
         }
 
-        $sql = "SELECT id, nome, descri, link FROM esercizi";
+        $sql = "SELECT id, descri, link FROM esercizi";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo '<li><a href="' . $row['link'] . '">' . $row['nome'] 
-                . ' - ' . $row['descri'] . '</a></li>';
+                echo '<li><a href="' . $row['link'] . '">' . $row['descri'] . '</a></li>';
             }
             
         } else {

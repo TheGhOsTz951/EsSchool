@@ -67,3 +67,41 @@ body {
     max-width: 1000px;
     text-align: center;
 }
+
+.up {
+    padding: 15px 25px;
+    background-color: #7B85EA;
+    border: 1px solid #7B85EA;
+    transition: all 0.3s ease;
+}
+
+.up:hover {
+    background-color: #9FA6F0;
+    border: 1px solid #9FA6F0;
+}
+
+.up img {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+#fileToUpload {
+    display: none;
+}
+
+#icons8 {
+    position: absolute;
+    right: 1%;
+    bottom: 0.3%;
+    color: white;
+}
+
+#icons8 a {
+    text-decoration: underline;
+    color: white;
+}
