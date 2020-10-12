@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iscriviti | AleSite</title>
+
+    <link rel="stylesheet" href="../css/es3.css">
+</head>
+
+<body>
+    <h1 class="title">Iscriviti al sito</h1>
+    
+    <form name="form" action="">
+        <p>Nome: <input type="text" name="name" id="" placeholder="Sasso"></p>
+        <p>Cognome: <input type="text" name="surname" id="" placeholder="Rossi"></p>
+        <p>Indirizzo: <input type="text" name="address" id="" placeholder="Via san Sasso"></p>
+        <p>Citta': <input type="text" name="city" id="" placeholder="Vasto"></p>
+        <p>
+            Provincia: 
+            <select name="sel-p" id="">
+                <option value="chieti">Chieti</option>
+                <option value="teramo">Teramo</option>
+                <option value="pescara">Pescara</option>
+                <option value="aquila">L'Aquila</option>
+            </select>
+        </p>
+        <p>Data di nascita: <input type="date" name="birthday"></p>
+        <p>Anni: <input type="number" name="age" min="0" max="130"></p>
+        <p>
+            Sesso: 
+            <input type="radio" name="sex" checked> Maschio
+            <input type="radio" name="sex"> Femmina
+        </p>
+        <ul>
+            <li>Hobby</li>
+            <li><input type="checkbox" name="hobby" id=""> Lettura</li>
+            <li><input type="checkbox" name="hobby" id=""> Sport</li>
+            <li><input type="checkbox" name="hobby" id=""> Gaming</li>
+            <li><input type="checkbox" name="hobby" id=""> Relax</li>
+        </ul>
+        <p>
+            Titolo di studio:
+            <select name="sel-t" id="">
+                <option value="media">Licenza media</option>
+                <option value="diploma">Diploma</option>
+                <option value="laurea">Laurea</option>
+            </select>
+        </p>
+        <hr>
+        <p>Commento sul sito</p>
+        <p><textarea name="comment" id="" cols="30" rows="10" placeholder=""></textarea></p>
+        <p><input type="submit" value="Invia" class="btn cl-send"> <input type="reset" value="Reset" class="btn cl-res"></p>
+    </form>
+
+    <p id="icons8"><a target="_blank" href="https://icons8.com/icons/set/x-coordinate">X Coordinate icon</a> icon by <a
+            target="_blank" href="https://icons8.com">Icons8</a></p>
+
+    <a class="btn cl-down rigth" href="es3.html" download="es3.html">Scarica il codice</a>
+    <a class="top-right" href="../index.php"><img src="../images/x-icon.png" alt="close"></a>
+</body>
+</html>

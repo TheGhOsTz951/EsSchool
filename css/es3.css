@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+body {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+}
+
+form, form input, form textarea, form select, a, #icons8 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 22px;
+}
+
+form {
+    margin: 35px auto 0;
+    padding: 30px 0 20px;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0pt 3pt 15pt 2pt gray;
+}
+
+form input {
+    font-family: 'Hind Siliguri', sans-serif;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 0 0 0 10px;
+}
+
+form input[type="number"] {
+    width: 50px;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form textarea {
+    padding: 10px;
+    resize: none;
+    font-size: 18px;
+}
+
+form select {
+    margin: 0 0 0 10px;
+    font-size: 16px;
+}
+
+form hr {
+    width: 80%;
+}
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.cl-send {
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    transition: all 0.3s ease;
+}
+
+.cl-send:hover {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    color: white;
+}
+
+.cl-res {
+    background-color: white;
+    border: 1px solid tomato;
+    color: tomato;
+    transition: all 0.3s ease;
+}
+
+.cl-res:hover {
+    background-color: tomato;
+    border: 1px solid tomato;
+    color: white;
+}
+
+.cl-down {
+    background-color: #40B842;
+    border: 1px solid #40B842;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-down:hover {
+    background-color: #76CF77;
+    border: 1px solid #76CF77;
+    color: white;
+}
+
+a.btn {
+    position: fixed;
+    text-decoration: none;
+    width: auto;
+}
+
+.rigth {
+    right: 1%;
+    bottom: 1%;
+}
+
+.top-right {
+    position: absolute;
+    top: 26.8px;
+    right: 1%;
+}
+
+#icons8 {
+    margin: 20px 0 0;
+}
+
+#icons8 a {
+    color: black;
+    text-decoration: underline;
+}
