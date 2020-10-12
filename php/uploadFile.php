@@ -49,7 +49,7 @@
         if ($uploadOk == 0) {
             //echo "Il file non e' stato caricato";
         } else if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+            //echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
         } else {
             //echo "Sorry, there was an error uploading your file.";
             $uploadOk = 0;
