@@ -1,7 +1,7 @@
 function showAdd() {
     let div = document.getElementById("add-es-div");
 
-    if (div.style.display === "none") {
+    if (div.style.display === "none" || div.style.display === "") {
         div.style.display = "block";
         selShow();
     } else {

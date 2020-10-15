@@ -20,7 +20,7 @@
         </ol>
     </div>
 
-    <p class="p-btn"><input class="btn add" type="button" value="Aggiungi esercizio" onclick="showAdd()"></p>
+    <p class="p-btn"><button class="btn add" onclick="showAdd()">Aggiungi esercizio</button></p>
 
     <div id="add-es-div" class="add-es">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
@@ -34,16 +34,16 @@
             </p>
             <p>Password: <input type="password" name="pw"></p>
             <p id="desc">Descrizione: <input type="text" name="desc"></p>
-            <label class="btn up">
-                Seleziona file
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <img src="images/up-icon.png" alt="upload">
-            </label>
-            <p class="margin-top"><input class="btn add" type="submit" value="Carica file"></p>
+            <p class="margin-top">
+                <label class="btn up">
+                    Seleziona file
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <img src="images/upload.svg" alt="upload">
+                </label>
+            </p>
+            <p class="margin-top"><input class="btn load" type="submit" value="Carica file"></p>
         </form>
     </div>
-
-    <p id="icons8"><a target="_blank" href="https://icons8.it/icons/set/upload">Caricare icon</a> icona per <a target="_blank" href="https://icons8.it">icone 8</a></p>
 </body>
 
 <script src="js/index.js"></script>

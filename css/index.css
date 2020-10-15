@@ -7,6 +7,7 @@ body {
     background: linear-gradient(to top, #fbc7d4, #9796f0);
     background-attachment: fixed;
     color: whitesmoke;
+    -webkit-appearance: none;
 }
 
 .title {
@@ -49,15 +50,15 @@ body {
 }
 
 .add {
-    background-color: #68656C;
-    border: 1px solid #68656C;
+    background-color: #8D20FA;
+    border: 1px solid #8D20FA;
     color: white;
     transition: all 0.3s ease;
 }
 
 .add:hover {
-    background-color: #88858C;
-    border: 1px solid #88858C;
+    background-color: #A54EFB;
+    border: 1px solid #A54EFB;
     color: white;
 }
 
@@ -81,9 +82,20 @@ body {
 }
 
 .up img {
-    position: relative;
-    top: 10px;
-    left: 5px;
+    margin: 0 0 0 6px;
+    height: 25px;
+    vertical-align: sub;
+    color: blue;
+}
+
+.load {
+    background: hsla(333, 100%, 53%, 1);
+    background: linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
 .margin-top {
