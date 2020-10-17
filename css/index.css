@@ -128,15 +128,3 @@ body {
 #fileToUpload {
     display: none;
 }
-
-#icons8 {
-    position: absolute;
-    right: 1%;
-    bottom: 0.3%;
-    color: white;
-}
-
-#icons8 a {
-    text-decoration: underline;
-    color: white;
-}
