@@ -50,15 +50,15 @@ body {
 }
 
 .add {
-    background-color: #8D20FA;
-    border: 1px solid #8D20FA;
+    background-color: transparent;
+    border: 1px solid white;
     color: white;
     transition: all 0.3s ease;
 }
 
 .add:hover {
-    background-color: #A54EFB;
-    border: 1px solid #A54EFB;
+    background-color: #7B85EA;
+    border: 1px solid #7B85EA;
     color: white;
 }
 
@@ -69,8 +69,14 @@ body {
     text-align: center;
 }
 
+.add-es hr {
+    max-width: 400px;
+    border: 1px solid whitesmoke;
+}
+
 .up {
-    padding: 15px 25px;
+    margin: 10px 0 0;
+    display: inline-block;
     background-color: #7B85EA;
     border: 1px solid #7B85EA;
     transition: all 0.3s ease;
@@ -84,22 +90,39 @@ body {
 .up img {
     margin: 0 0 0 6px;
     height: 25px;
-    vertical-align: sub;
-    color: blue;
+    vertical-align: text-bottom;
 }
 
 .load {
-    background: hsla(333, 100%, 53%, 1);
-    background: linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: white;
+    /*
+        Vedere gradient text
+        background: hsla(333, 100%, 53%, 1);
+        background: linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+        background: -moz-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+        background: -webkit-linear-gradient(0deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    */
+    margin: 10px 0 0;
+    background-color: #EF6A22;
+    border: 1px solid #EF6A22;
+    color: white;
+    transition: all 0.3s ease;
 }
 
-.margin-top {
-    margin-top: 30px;
+.load:hover {
+    background-color: #F28B54;
+    border: 1px solid #F28B54;
+    color: white;
+}
+
+.load img {
+    margin: 0 0 0 6px;
+    height: 25px;
+}
+
+.load span, .load img {
+    vertical-align: middle;
 }
 
 #fileToUpload {

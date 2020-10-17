@@ -34,14 +34,14 @@
             </p>
             <p>Password: <input type="password" name="pw"></p>
             <p id="desc">Descrizione: <input type="text" name="desc"></p>
-            <p class="margin-top">
-                <label class="btn up">
+            <hr>
+            <label class="btn up">
                     Seleziona file
                     <input type="file" name="fileToUpload" id="fileToUpload">
-                    <img src="images/upload.svg" alt="upload">
-                </label>
-            </p>
-            <p class="margin-top"><input class="btn load" type="submit" value="Carica file"></p>
+                    <img src="images/loadFile.svg" alt="load">
+            </label>
+            <br>
+            <button class="btn load" type="submit" ><span>Carica file</span><img src="images/upload.svg" alt="upload"></button>
         </form>
     </div>
 </body>
