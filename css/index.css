@@ -25,9 +25,9 @@ body {
     text-align: center;
 }
 
-.es-list ol {
+.es-list ul {
     font-size: 18px;
-    list-style-type: upper-roman;
+    list-style-type: none;
     padding: 0;
 }
 

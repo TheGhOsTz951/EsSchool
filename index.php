@@ -15,9 +15,9 @@
 
     <div class="es-list">
         <h2>Ecco la lista dei miei esercizi</h2>
-        <ol>
+        <ul>
             <?php @createList(); ?>
-        </ol>
+        </ul>
     </div>
 
     <p class="p-btn"><button class="btn add" onclick="showAdd()">Aggiungi esercizio</button></p>
@@ -77,7 +77,7 @@
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo '<li><a href="' . $row['link'] . '">' . $row['descri'] . '</a></li>';
+                echo '<li>' . $row['id'] . ' - <a href="' . $row['link'] . '">' . $row['descri'] . '</a></li>';
             }
             
         } else {
