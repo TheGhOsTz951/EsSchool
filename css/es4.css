@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
+    overflow-x: auto;
+}
+
+th {
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    background-image: url(../images/es4/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50px fit-content;
+}
+
+.img-row img {
+    width: 300px;
+}
