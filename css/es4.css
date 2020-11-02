@@ -1,25 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-div {
-    overflow-x: auto;
-}
-
-th {
-    font-size: 20px;
-}
+/* -- TITLE SECTION -- */
 
 .title {
+    margin: 0;
+    padding: 20px 0 100px;
     text-align: center;
-    background-image: url(../images/es4/bg.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 50px fit-content;
+    color: white;
+    background-image: url(../images/es4/bg2.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 700px auto;
+}
+
+.title h1 {
+    background-color: #0e1215;
+}
+
+/* -- TABLE SECTION -- */
+
+.table-div {
+    overflow-x: auto;
+    margin: 50px 0 0;
+}
+
+.table-div th {
+    font-size: 24px;
 }
 
 .img-row img {
     width: 300px;
+}
+
+/* -- LINK DIV SECTION -- */
+
+.link-div {
+    margin: 10px 50px;
+}
+
+.link-div ul {
+    list-style-type: '-';
+}
+
+.link-div li {
+    margin: 13px 0 0;
+}
+
+.link-div a {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    color: black;
+}
+
+/* -- BUTTON SECTION -- */
+
+.btn-div {
+    margin: 10px 0 35px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    width: auto;
+}
+
+.cl-send {
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    transition: all 0.3s ease;
+}
+
+.cl-send:hover {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    color: white;
+}
+
+.cl-res {
+    background-color: #ff6347;
+    border: 1px solid #ff6347;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-res:hover {
+    background-color: #FF846F;
+    border: 1px solid #FF846F;
+    color: white;
+}
+
+.cl-down {
+    background-color: #40B842;
+    border: 1px solid #40B842;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-down:hover {
+    background-color: #76CF77;
+    border: 1px solid #76CF77;
+    color: white;
 }
