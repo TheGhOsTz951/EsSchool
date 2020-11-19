@@ -1,0 +1,17 @@
+Una società di servizi agricoli decide di dare in affitto alcuni attrezzi di uso sporadico 
+(aratro, erpice, depollinatore ,….), l’affitto è giornaliero e per ogni mezzo è previsto 
+un prezzo diversificato.
+
+Gli utenti per consultare non hanno bisogno di registrazione, 
+mentre per prenotare un mezzo essa è necessaria. 
+Naturalmente in fase di prenotazione si possono prenotare solo mezzi disponibili. 
+Il sistema permette anche una comunicazione tra utenti e gestore dei servizi. 
+L’alunno fornisca una descrizione del sistema che intende sviluppare indicando cosa 
+permette di fare il sistema e cosa ricorda.
+
+Disegni la struttura software del sistema con annessa legenda, 
+infine disegni uno o più tracciati video significativi.
+
+Questo è il progettodi Informatica, voi per TPSIT dovete creare la parte in HTML dell'interfaccia, 
+quindi il sito della società di servizi agricoli, con gli attrezzi da dare in affitto, 
+e la schermata per registrarsi. 
