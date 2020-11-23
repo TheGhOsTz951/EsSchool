@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --- TITLE SECTION --- */
+
+.title {
+    text-align: center;
+}
+
+.title h1 span {
+    font-family: 'Fredoka One', cursive;
+    color: tomato;
+}
+
+.title h2 {
+    font-weight: normal;
+}
+
+.title h2 span {
+    font-weight: bold;
+}
+
+/* --- SEPARE SECTION --- */
+
+.separe {
+    margin: 50px 30px 24px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* --- SCHEDE SECTION --- */
+
+.schede-attrezzi {
+    padding: 20px 0;
+    display: flex;
+    overflow-x: auto;
+}
+
+.div-attrezzo {
+    margin: 20px 40px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0pt 2pt 20pt 1pt gray;
+    border-radius: 15px;
+}
+
+.name {
+    margin: 30px 10px 20px;
+    font-size: 24px;
+}
+
+.div-attrezzo .img {
+    display: none;
+}
+
+.price {
+    font-size: 26px;
+}
+
+/* --- CLONE SECTION --- */
+
+#clone .img {
+    display: block;
+    margin: 0px 50px;
+    max-width: 400px;
+    max-height: 400px;
+}

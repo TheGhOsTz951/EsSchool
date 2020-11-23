@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AgricoRiccio</title>
+
+    <link rel="stylesheet" href="../css/esCompitoLogin.css">
+</head>
+<body>
+    <div class="forms">
+        <form action="esCompitoHome.html">
+            <div id="reg-div">
+                <p>Inserisci username: <input type="text"></p>
+                <p>Inserisci password: <input type="password"></p>
+                <p>Data di nascita: <input type="date"></p>
+                <p>
+                    <select name="prov">
+                        <option value="chieti">Chieti</option>
+                        <option value="teramo">Teramo</option>
+                        <option value="pescara">Pescara</option>
+                        <option value="aquila">L'Aquila</option>
+                    </select>
+                </p>
+            </div>
+
+            <div id="acc-div">
+                <p>Username: <input type="text" placeholder="Sasso1911"></p>
+                <p>Password: <input type="password" placeholder="password"></p>
+            </div>
+
+            <div id="btn-div">
+                <p><input type="submit" value="Accedi" id="btn-log"></p>
+                <p><button id="btn-changer" type="button" onclick="divChanger()">Non sei registrato? Registrati!</button></p>
+                <p><button>Accedi come guest</button></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="../js/esCompito.js"></script>
+</html>

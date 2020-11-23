@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AgricoRiccio</title>
+
+    <link rel="stylesheet" href="../css/esCompitoHome.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Benevenuto in <span>AgricoRiccio</span></h1>
+        <h2>Qui puoi affittare i nostri attrezzi agricoli a <span>prezzi onesti per lavoratori onesti</span></h2>
+    </div>
+
+    <div class="separe">
+        <hr>
+        <p>Ecco i nostri attrezzi affittabili</p>
+    </div>
+
+    <div class="schede-attrezzi">
+        <div class="div-attrezzo" id="0" onclick="changeSel(this.id)">
+            <h1 class="name">Aratro Trivomere per Trattorino 20 - 35</h1>
+            <p><img src="../images/esCompito/aratro.jpg" alt="Aratro" class="img"></p>
+            <p class="price">10€*</p>
+            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+        </div>
+
+        <div class="div-attrezzo" id="1" onclick="changeSel(this.id)">
+            <h1 class="name">Erpice rotante pieghevole marca Ortolan serie Gemini 1 350</h1>
+            <p><img src="../images/esCompito/erpice.jpg" alt="Aratro" class="img"></p>
+            <p class="price">50€*</p>
+            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+        </div>
+
+        <div class="div-attrezzo" id="2" onclick="changeSel(this.id)">
+            <h1 class="name">Erpice rotante pieghevole marca Ortolan serie Gemini 1 350</h1>
+            <p><img src="../images/esCompito/erpice.jpg" alt="Aratro" class="img"></p>
+            <p class="price">50€*</p>
+            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+        </div>
+    </div>
+
+    <div id="selected-attrezzo">
+
+    </div>
+</body>
+
+<script src="../js/esCompito.js"></script>
+</html>

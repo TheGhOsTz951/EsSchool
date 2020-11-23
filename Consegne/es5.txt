@@ -15,3 +15,6 @@ infine disegni uno o più tracciati video significativi.
 Questo è il progettodi Informatica, voi per TPSIT dovete creare la parte in HTML dell'interfaccia, 
 quindi il sito della società di servizi agricoli, con gli attrezzi da dare in affitto, 
 e la schermata per registrarsi. 
+
+Faccio la pagina login/registrati che linka la pagina con gli attrezzi.
+La login ha anche un accedi come guest.
