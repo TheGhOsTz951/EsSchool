@@ -45,32 +45,50 @@ body {
 .div-attrezzo {
     display: inline-block;
     margin: 20px 40px;
-    width: 500px;
+    padding: 10px 10px 0;
+    width: 400px;
     text-align: center;
-    box-shadow: 0pt 2pt 20pt 1pt gray;
+    box-shadow: 0pt 3pt 18pt -4pt gray;
     border-radius: 15px;
+    border: 3px solid tomato;
     white-space: normal;
     vertical-align: top;
 }
 
 .name {
-    margin: 30px 10px 20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
-.div-attrezzo .img {
+.img, .btn-affitta{
     display: none;
 }
 
 .price {
     font-size: 26px;
+    margin: 0;
 }
 
 /* --- CLONE SECTION --- */
 
-#clone .img {
+#clone {
     display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 700px;
+    border: 0px;
+}
+
+#clone .name {
+    font-size: 24px;
+}
+
+#clone .img {
+    display: inline;
     margin: 0px 50px;
     max-width: 400px;
     max-height: 400px;
+}
+
+#clone .btn-affitta {
+    display: inline-block;
 }
