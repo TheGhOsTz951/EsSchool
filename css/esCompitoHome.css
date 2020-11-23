@@ -38,16 +38,19 @@ body {
 
 .schede-attrezzi {
     padding: 20px 0;
-    display: flex;
+    white-space: nowrap;
     overflow-x: auto;
 }
 
 .div-attrezzo {
+    display: inline-block;
     margin: 20px 40px;
     width: 500px;
     text-align: center;
     box-shadow: 0pt 2pt 20pt 1pt gray;
     border-radius: 15px;
+    white-space: normal;
+    vertical-align: top;
 }
 
 .name {

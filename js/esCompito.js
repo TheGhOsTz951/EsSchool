@@ -28,4 +28,7 @@ function changeSel(divId) {
     }
 
     sel.appendChild(clone);
+
+    location.href = "#";
+    location.href = "#clone";
 }
