@@ -149,3 +149,20 @@ body {
     color: red;
     text-align: center;
 }
+
+/* --- BACK SECTION --- */
+
+#back {
+    position: absolute;
+    left: 30px;
+    top: 35px;
+}
+
+#back a {
+    display: block;
+}
+
+#back, #back a, #back img {
+    width: 24px;
+    height: 24px;
+}
