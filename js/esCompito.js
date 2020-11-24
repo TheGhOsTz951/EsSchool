@@ -18,6 +18,8 @@ function divChanger() {
 }
 
 function changeSel(divId) {
+    if (divId === "clone") return;
+
     let sel = document.getElementById("selected-attrezzo");
     let div = document.getElementById(divId);
     let clone = div.cloneNode(true);
@@ -31,4 +33,18 @@ function changeSel(divId) {
 
     location.href = "#";
     location.href = "#clone";
+}
+
+function affitta() {
+    let sel = document.getElementById("selected-attrezzo");
+    let p = document.createElement('p');
+    let text = document.createTextNode('Affitto non disponibile! Questa pagina e\' solo a scopo illustrativo!');
+
+    p.appendChild(text);
+    p.setAttribute('id', 'error');
+
+    sel.appendChild(p);
+
+    location.href = "#";
+    location.href = "#error";
 }

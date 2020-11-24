@@ -5,11 +5,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    /* Rende tutto non selezionabile */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* --- TITLE SECTION --- */
 
 .title {
+    margin: 25px 30px 0;
     text-align: center;
 }
 
@@ -29,9 +37,14 @@ body {
 /* --- SEPARE SECTION --- */
 
 .separe {
-    margin: 50px 30px 24px;
+    margin: 40px 30px 0px;
     text-align: center;
     font-size: 24px;
+}
+
+#advert {
+    font-size: 14px;
+    margin: 0;
 }
 
 /* --- SCHEDE SECTION --- */
@@ -53,13 +66,19 @@ body {
     border: 3px solid tomato;
     white-space: normal;
     vertical-align: top;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.div-attrezzo:hover {
+    box-shadow: 0pt 3pt 18pt 1pt gray;
 }
 
 .name {
     font-size: 20px;
 }
 
-.img, .btn-affitta{
+.img, .btn{
     display: none;
 }
 
@@ -70,12 +89,24 @@ body {
 
 /* --- CLONE SECTION --- */
 
+#tutorial {
+    margin: 30px 30px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
 #clone {
     display: block;
     margin: 20px auto;
     padding: 10px;
     width: 700px;
     border: 0px;
+    transition: none;
+    cursor: default;
+}
+
+#clone:hover {
+    box-shadow: 0pt 3pt 18pt -4pt gray;
 }
 
 #clone .name {
@@ -89,6 +120,32 @@ body {
     max-height: 400px;
 }
 
-#clone .btn-affitta {
+#clone .btn {
     display: inline-block;
+    margin: 10px 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+.cl-aff {
+    background-color: #FF6D12;
+    border: 1px solid #FF6D12;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-aff:hover {
+    background-color: #FF8337;
+    border: 1px solid #FF8337;
+    color: white;
+}
+
+#error {
+    margin: 30px 30px;
+    font-size: 24px;
+    color: red;
+    text-align: center;
 }

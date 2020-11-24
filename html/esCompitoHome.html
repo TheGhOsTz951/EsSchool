@@ -16,6 +16,7 @@
     <div class="separe">
         <hr>
         <p>Ecco i nostri attrezzi affittabili</p>
+        <p id="advert">* i prezzi indicano l'affitto giornaliero</p>
     </div>
 
     <div class="schede-attrezzi">
@@ -23,33 +24,33 @@
             <h1 class="name">Aratro Trivomere per Trattorino 20 - 35</h1>
             <p><img src="../images/esCompito/aratro.jpg" alt="Aratro" class="img"></p>
             <p class="price">10€*</p>
-            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+            <p><input type="button" class="btn cl-aff" value="Affitta" onclick="affitta()"></p>
         </div>
 
         <div class="div-attrezzo" id="1" onclick="changeSel(this.id)">
-            <h1 class="name">Erpice rotante pieghevole marca Ortolan serie Gemini 1 350</h1>
+            <h1 class="name">Erpice rotante pieghevole</h1>
             <p><img src="../images/esCompito/erpice.jpg" alt="Aratro" class="img"></p>
             <p class="price">50€*</p>
-            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+            <p><input type="button" class="btn cl-aff" value="Affitta" onclick="affitta()"></p>
         </div>
 
         <div class="div-attrezzo" id="2" onclick="changeSel(this.id)">
-            <h1 class="name">Erpice rotante pieghevole marca Ortolan serie Gemini 1 350</h1>
-            <p><img src="../images/esCompito/erpice.jpg" alt="Aratro" class="img"></p>
-            <p class="price">50€*</p>
-            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+            <h1 class="name">Ripuntatore con rullo</h1>
+            <p><img src="../images/esCompito/ripuntatore.jpg" alt="Ripuntatore" class="img"></p>
+            <p class="price">30€*</p>
+            <p><input type="button" class="btn cl-aff" value="Affitta" onclick="affitta()"></p>
         </div>
 
         <div class="div-attrezzo" id="3" onclick="changeSel(this.id)">
-            <h1 class="name">Aratro Trivomere per Trattorino 20 - 35</h1>
-            <p><img src="../images/esCompito/aratro.jpg" alt="Aratro" class="img"></p>
-            <p class="price">10€*</p>
-            <p><input type="button" class="btn-affitta" value="Affitta"></p>
+            <h1 class="name">Carrello portattrezzi</h1>
+            <p><img src="../images/esCompito/carrello.jpg" alt="Carrello" class="img"></p>
+            <p class="price">20€*</p>
+            <p><input type="button" class="btn cl-aff" value="Affitta" onclick="affitta()"></p>
         </div>
     </div>
 
     <div id="selected-attrezzo">
-
+        <p id="tutorial">Clicca su un'offerta per vedere maggiori dettagli e per poter affittare!</p>
     </div>
 </body>
 

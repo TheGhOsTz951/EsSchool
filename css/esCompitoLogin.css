@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
     margin: 0;
@@ -6,16 +7,109 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* --- TITLE SECTION --- */
+
+.title h1 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: tomato;
+}
+
+.title hr {
+    max-width: 400px;
+}
+
+/* --- REG AND LOG SECTION --- */
+
+.forms p {
+    font-size: 22px;
+}
+
+.forms input, .forms select {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+} 
+
+.forms input[type='text'], .forms input[type='password'],
+.forms input[type='date'] {
+    margin: 0 0 0 10px;
+    padding: 0 0 5px 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.forms select {
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+
 .forms {
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 13px 5px;
     text-align: center;
     max-width: 700px;
-    box-shadow: 0pt 2pt 20pt 1pt gray;
+    box-shadow: 0pt 2pt 20pt -5pt gray;
     border-radius: 15px;
     border: 2px solid tomato;
 }
 
 #reg-div {
     display: none;
+}
+
+/* --- BUTTON SECTION ---*/
+
+#btn-div {
+    margin: 20px 0 0;
+}
+
+#btn-div p {
+    margin: 0;
+}
+
+.btn {
+    margin: 10px 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: auto;
+    cursor: pointer;
+}
+
+.cl-access {
+    background-color: white;
+    border: 1px solid #FF6D12;
+    color: #FF6D12;
+    transition: all 0.3s ease;
+}
+
+.cl-access:hover {
+    background-color: #FF6D12;
+    border: 1px solid #FF6D12;
+    color: white;
+}
+
+.cl-changer {
+    background-color: #FF6D12;
+    border: 1px solid #FF6D12;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-changer:hover {
+    background-color: #FF8336;
+    border: 1px solid #FF8336;
+    color: white;
+}
+
+#guest {
+    margin: 20px 0 0 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    color: cornflowerblue;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
 }

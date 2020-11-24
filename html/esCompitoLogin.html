@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="../css/esCompitoLogin.css">
 </head>
 <body>
+    <div class="title">
+        <h1>AgricoRiccio</h1>
+        <hr>
+    </div>
+
     <div class="forms">
         <form action="esCompitoHome.html">
             <div id="reg-div">
-                <p>Inserisci username: <input type="text"></p>
-                <p>Inserisci password: <input type="password"></p>
+                <p>Inserisci username: <input type="text" placeholder="Sassarotto88"></p>
+                <p>Inserisci password: <input type="password" placeholder="12ciao"></p>
                 <p>Data di nascita: <input type="date"></p>
-                <p>
+                <p> 
+                    Provincia: 
                     <select name="prov">
                         <option value="chieti">Chieti</option>
                         <option value="teramo">Teramo</option>
@@ -30,9 +36,9 @@
             </div>
 
             <div id="btn-div">
-                <p><input type="submit" value="Accedi" id="btn-log"></p>
-                <p><button id="btn-changer" type="button" onclick="divChanger()">Non sei registrato? Registrati!</button></p>
-                <p><button>Accedi come guest</button></p>
+                <p><input class="btn cl-access" type="submit" value="Accedi" id="btn-log"></p>
+                <p><button class="btn cl-changer" id="btn-changer" type="button" onclick="divChanger()">Non sei registrato? Registrati!</button></p>
+                <p><button id="guest">Accedi come guest</button></p>
             </div>
         </form>
     </div>
